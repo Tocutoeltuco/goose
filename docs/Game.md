@@ -13,6 +13,8 @@ Game.**waitFor**(_evt, pred, timeout_) <a id="Game.waitFor" href="#Game.waitFor"
 >
 >Blocks until the given event is fired and a call to pred with the event parameters returns true
 >
+>This method is only available when the following preprocessing variables are true: `COROUTINE_SUPPORT`
+>
 >| Parameter | Type | Can be nil | Description |
 >| :-: | :-: | :-: | :-- |
 >| evt | `string` | ✕ | The event name |
@@ -29,6 +31,8 @@ Game.**waitFor**(_evt, pred, timeout_) <a id="Game.waitFor" href="#Game.waitFor"
 Game.**waitTimeout**(_timeout_) <a id="Game.waitTimeout" href="#Game.waitTimeout">¶</a>
 >
 >Blocks until the given timeout passes
+>
+>This method is only available when the following preprocessing variables are true: `COROUTINE_SUPPORT`
 >
 >| Parameter | Type | Can be nil | Description |
 >| :-: | :-: | :-: | :-- |
@@ -52,6 +56,8 @@ Game.**\_getEvents**() <a id="Game._getEvents" href="#Game._getEvents">¶</a>
 >
 >Returns the table with the registered events. Usage should only be internal.
 >
+>This method is only available when the following preprocessing variables are true: `OVERRIDE_EVENTS or HANDLE_RUNTIME`
+>
 >| Returns | Description |
 >| :-: | :-- |
 >| table | The events table |
@@ -61,6 +67,8 @@ Game.**\_getEvents**() <a id="Game._getEvents" href="#Game._getEvents">¶</a>
 Game.**\_handleError**(_msg_) <a id="Game._handleError" href="#Game._handleError">¶</a>
 >
 >Triggers the error callbacks. Usage should only be internal.
+>
+>This method is only available when the following preprocessing variables are true: `OVERRIDE_EVENTS or HANDLE_RUNTIME`
 >
 >| Parameter | Type | Can be nil | Description |
 >| :-: | :-: | :-: | :-- |
@@ -121,6 +129,8 @@ Game.**allocate**(_evt_) <a id="Game.allocate" href="#Game.allocate">¶</a>
 >
 >Allocates a global variable that dispatches the given event
 >
+>This method is only available when the following preprocessing variables are true: `OVERRIDE_EVENTS`
+>
 >| Parameter | Type | Can be nil | Description |
 >| :-: | :-: | :-: | :-- |
 >| evt | `string` | ✕ | The event name (newPlayer, loop, textAreaCallback, ...) |
@@ -130,5 +140,7 @@ Game.**allocate**(_evt_) <a id="Game.allocate" href="#Game.allocate">¶</a>
 Game.**stopInitialization**() <a id="Game.stopInitialization" href="#Game.stopInitialization">¶</a>
 >
 >Signals the initialization of the module has ended and starts handling runtime.
+>
+>This method is only available when the following preprocessing variables are true: `HANDLE_RUNTIME`
 
 ---

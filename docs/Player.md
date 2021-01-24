@@ -45,6 +45,8 @@ Player:**schedule**(_evt, ..._) <a id="Player.schedule" href="#Player.schedule">
 >
 >Schedule an event for when the player is fully loaded. Usage should be internal.
 >
+>This method is only available when the following preprocessing variables are true: `OVERRIDE_EVENTS`
+>
 >| Parameter | Type | Can be nil | Description |
 >| :-: | :-: | :-: | :-- |
 >| evt | `string` | ✕ | The event name |

@@ -227,6 +227,13 @@ for klass, data in objects.items():
 		)
 		content.append(">" + ("\n>\n>".join(method["description"])))
 
+		if method["available"] is not None:
+			content.append(
+				">\n>This method is only available when the following"
+				" preprocessing variables are true: `{}`"
+				.format(method["available"])
+			)
+
 		if method["parameters"]:
 			content.append(">\n>| Parameter | Type | Can be nil | Description |")
 			content.append(">| :-: | :-: | :-: | :-- |")
