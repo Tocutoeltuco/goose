@@ -41,7 +41,7 @@ Player.**partial**(_name_) <a id="Player.partial" href="#Player.partial">¶</a>
 
 ---
 
-Player:**schedule**(_evt, ..._) <a id="Player:schedule" href="#Player:schedule">¶</a>
+Player:**schedule**(_evt, ..._) <a id="Player.schedule" href="#Player.schedule">¶</a>
 >
 >Schedule an event for when the player is fully loaded. Usage should be internal.
 >
@@ -68,7 +68,7 @@ Player.**new**(_name_) <a id="Player.new" href="#Player.new">¶</a>
 
 ---
 
-Player:**loadInfo**() <a id="Player:loadInfo" href="#Player:loadInfo">¶</a>
+Player:**loadInfo**() <a id="Player.loadInfo" href="#Player.loadInfo">¶</a>
 >
 >Fully loads a player if it was partially loaded.
 >
@@ -80,7 +80,7 @@ Player:**loadInfo**() <a id="Player:loadInfo" href="#Player:loadInfo">¶</a>
 
 ---
 
-Player:**update**() <a id="Player:update" href="#Player:update">¶</a>
+Player:**update**() <a id="Player.update" href="#Player.update">¶</a>
 >
 >Updates extra information of the player if possible, or fully loads the player if it was partially loaded.
 >
@@ -92,7 +92,7 @@ Player:**update**() <a id="Player:update" href="#Player:update">¶</a>
 
 ---
 
-Player:**fetchData**(_await, timeout_) <a id="Player:fetchData" href="#Player:fetchData">¶</a>
+Player:**fetchData**(_await, timeout_) <a id="Player.fetchData" href="#Player.fetchData">¶</a>
 >
 >Fetch this player's file (wrapper for system.loadPlayerData)
 >
@@ -110,7 +110,7 @@ Player:**fetchData**(_await, timeout_) <a id="Player:fetchData" href="#Player:fe
 
 ---
 
-Player:**chatMessage**(_msg_) <a id="Player:chatMessage" href="#Player:chatMessage">¶</a>
+Player:**chatMessage**(_msg_) <a id="Player.chatMessage" href="#Player.chatMessage">¶</a>
 >
 >Send a chat message to this player
 >
@@ -120,7 +120,7 @@ Player:**chatMessage**(_msg_) <a id="Player:chatMessage" href="#Player:chatMessa
 
 ---
 
-Player:**destroy**() <a id="Player:destroy" href="#Player:destroy">¶</a>
+Player:**destroy**() <a id="Player.destroy" href="#Player.destroy">¶</a>
 >
 >Destroys the player.
 >

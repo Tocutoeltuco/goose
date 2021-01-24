@@ -206,7 +206,7 @@ for klass, data in objects.items():
 	content.append("\n### Methods")
 	for method in data["methods"]:
 		readme.append(
-			"  * [{0}{1}{2}]({0}.md#{0}{1}{3})"
+			"  * [{0}{1}{2}]({0}.md#{0}.{3})"
 			.format(
 				klass, method["separator"],
 				method["name"].replace("_", "\\_"), method["name"]
@@ -218,7 +218,7 @@ for klass, data in objects.items():
 		)
 
 		content.append(
-			'{0}{1}**{2}**({3}) <a id="{0}{1}{4}" href="#{0}{1}{4}">¶</a>\n>'
+			'{0}{1}**{2}**({3}) <a id="{0}.{4}" href="#{0}.{4}">¶</a>\n>'
 			.format(
 				klass, method["separator"], method["name"].replace("_", "\\_"),
 				"_{}_".format(parameters) if parameters else "",
