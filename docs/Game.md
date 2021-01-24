@@ -23,8 +23,8 @@ Game.**waitFor**(_evt, pred, timeout_) <a id="Game.waitFor" href="#Game.waitFor"
 >
 >| Returns | Description |
 >| :-: | :-- |
->| boolean | If it is false, the timeout passed. |
->| ... | The event parameters |
+>| `boolean` | If it is false, the timeout passed. |
+>| `...` | The event parameters |
 
 ---
 
@@ -60,7 +60,7 @@ Game.**\_getEvents**() <a id="Game._getEvents" href="#Game._getEvents">¶</a>
 >
 >| Returns | Description |
 >| :-: | :-- |
->| table | The events table |
+>| `table` | The events table |
 
 ---
 
@@ -111,7 +111,7 @@ Game.**loadMap**(_map, flipped, await_) <a id="Game.loadMap" href="#Game.loadMap
 >
 >| Returns | Description |
 >| :-: | :-- |
->| boolean | Whether the map load has been started or not |
+>| `boolean` | Whether the map load has been started or not |
 
 ---
 

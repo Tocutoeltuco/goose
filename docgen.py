@@ -252,7 +252,7 @@ for klass, data in objects.items():
 			content.append(">\n>| Returns | Description |")
 			content.append(">| :-: | :-- |")
 			for tipe, desc in method["returns"]:
-				content.append(">| {} | {} |".format(tipe, desc))
+				content.append(">| {} | {} |".format(get_type((tipe,)), desc))
 
 		content.append("\n---\n")
 

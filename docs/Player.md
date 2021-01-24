@@ -23,7 +23,7 @@ Player.**load**(_name_) <a id="Player.load" href="#Player.load">¶</a>
 >
 >| Returns | Description |
 >| :-: | :-- |
->| Player | The player. May be nil. |
+>| [`Player`](Player.md#Player) | The player. May be nil. |
 
 ---
 
@@ -37,7 +37,7 @@ Player.**partial**(_name_) <a id="Player.partial" href="#Player.partial">¶</a>
 >
 >| Returns | Description |
 >| :-: | :-- |
->| Player | The created player |
+>| [`Player`](Player.md#Player) | The created player |
 
 ---
 
@@ -66,7 +66,7 @@ Player.**new**(_name_) <a id="Player.new" href="#Player.new">¶</a>
 >
 >| Returns | Description |
 >| :-: | :-- |
->| Player | The player. |
+>| [`Player`](Player.md#Player) | The player. |
 
 ---
 
@@ -78,7 +78,7 @@ Player:**loadInfo**() <a id="Player.loadInfo" href="#Player.loadInfo">¶</a>
 >
 >| Returns | Description |
 >| :-: | :-- |
->| boolean | Whether the player could be fully loaded or not. |
+>| `boolean` | Whether the player could be fully loaded or not. |
 
 ---
 
@@ -90,7 +90,7 @@ Player:**update**() <a id="Player.update" href="#Player.update">¶</a>
 >
 >| Returns | Description |
 >| :-: | :-- |
->| boolean | Whether extra information could be updated or not |
+>| `boolean` | Whether extra information could be updated or not |
 
 ---
 
@@ -107,8 +107,8 @@ Player:**fetchData**(_await, timeout_) <a id="Player.fetchData" href="#Player.fe
 >
 >| Returns | Description |
 >| :-: | :-- |
->| boolean | Whether awaiting has been successful or not |
->| string | The player's data, if you awaited for it and the first return value is true. |
+>| `boolean` | Whether awaiting has been successful or not |
+>| `string` | The player's data, if you awaited for it and the first return value is true. |
 
 ---
 
